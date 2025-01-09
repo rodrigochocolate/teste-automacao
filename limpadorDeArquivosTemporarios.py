@@ -2,7 +2,7 @@ import os
 import shutil
 from time import sleep
 
-pastas_caminhos = ('C:/Windows/Temp', 'C:/Users/rodri/AppData/Local/Temp', 'C:/Windows/prefetch')
+pastas_caminhos = ('C:/Windows/Temp', 'C:/Users/ruben/AppData/Local/Temp', 'C:/Windows/prefetch')
 
 for pasta_caminho in pastas_caminhos:
     pasta = os.listdir(pasta_caminho)
@@ -24,4 +24,4 @@ for pasta_caminho in pastas_caminhos:
             except PermissionError:
                 print(f'[{arquivo}] permissão negada.')
 
-sleep(2)
+sleep(1.5)
