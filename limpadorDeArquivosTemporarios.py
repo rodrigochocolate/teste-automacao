@@ -2,7 +2,8 @@ import os
 import shutil
 from time import sleep
 
-pastas_caminhos = ('C:/Windows/Temp', 'C:/Users/ruben/AppData/Local/Temp', 'C:/Windows/prefetch')
+usuario = os.getlogin()
+pastas_caminhos = ('C:/Windows/Temp', f'C:/Users/{usuario}/AppData/Local/Temp', 'C:/Windows/prefetch')
 
 for pasta_caminho in pastas_caminhos:
     pasta = os.listdir(pasta_caminho)
